@@ -81,12 +81,19 @@
       padding: 5px 0;
       cursor: pointer;
     }
+
     .text:hover{
       background: #F2F6FC;
       color:#409EFF;
       padding: 10px 0;
 
     }
+  }
+  .el-input{
+    width: calc(100% - 90px);
+  }
+  .el-button{
+    height: 40px;
   }
 
 </style>

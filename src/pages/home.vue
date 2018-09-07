@@ -2,7 +2,7 @@
     <div id="test">
       <el-container id="cons">
         <el-aside width="200px">
-          <el-menu class="left" :router="true" default-active="/axios"  background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
+          <el-menu class="left" :router="true" default-active="/index"  background-color="#545c64" text-color="#fff" active-text-color="#ffd04b">
             <el-menu-item index="/index">
               <i class="el-icon-menu"></i>
               <span slot="title">home</span>
