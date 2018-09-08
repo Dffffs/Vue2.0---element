@@ -1,5 +1,8 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
+import mutations from './mutations.js';
+import getters from './getters.js';
+import actions from './actions.js';
 
 Vue.use(Vuex);
 
@@ -7,29 +10,6 @@ const state = {
   count:1
 };
 
-const mutations = {
-  add(state,n){
-    state.count += n;
-  },
-  reduce(state){
-    state.count --;
-  }
-};
-
-const getters = {
-  count(state){
-    return state.count += 100
-  }
-};
-
-const actions = {
-  addActions(context){
-    context.commit('add',66)
-  },
-  reduceActions({commit}){
-    commit('reduce')
-  }
-}
 
 export default new Vuex.Store({
   state,
